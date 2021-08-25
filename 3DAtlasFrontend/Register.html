@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2" id="alertbox" style="margin-top:50px; display: none" >
+        <!--<div class="alert alert-success" id="alertmessage">
+            alert box could indicate a successful or positive action
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>-->
+    </div>
+
+    <div class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2" id="registerbox" style="padding-top: 50px">
+    <div class="panel panel-info" >
+        <div class="panel-heading">
+            <div class="panel-title">Sign Up</div>
+        </div>
+        <div class="panel-body" >
+
+            <div class="alert alert-danger col-sm-12" id="login-alert" style="display:none"></div>
+
+            <form id="signupform" class="form-horizontal" role="form">
+                <div class="form-group">
+                    <label class="col-md-3 control-label">First Name</label>
+                    <div class="col-md-9">
+                        <input type="text" class="form-control" name="firstname" id="firstname" placeholder="First Name" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-3 control-label">Last Name</label>
+                    <div class="col-md-9">
+                        <input type="text" class="form-control" name="lastname" id="lastname" placeholder="Last Name" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-md-3 control-label">Email</label>
+                    <div class="col-md-9">
+                        <input type="text" class="form-control" id = "email" name="email" placeholder="Email Address" required>
+                    </div>
+                </div>
+
+
+                <div class="form-group">
+                    <label class="col-md-3 control-label">Password</label>
+                    <div class="col-md-9">
+                        <input type="password" class="form-control" name="passwd" id="passwd" placeholder="Password" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <!-- Button -->
+                    <div class="col text-center">
+                        <button class="btn btn-success" type="button" onclick="getInfo()" style="min-width: 250px">Sign Up</button>
+                    </div>
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+    </div>
+
+</div>
+<script type="text/javascript" src="Register.js"></script>
+
+</body>
+</html>
